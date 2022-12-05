@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Capter one</title>
+</head>
+<body>
+    <header>
+        <img src="images/te.jpg" alt="">
+        <a href="" class="logo">Syrian team in Raisoni</a>
+        <nav class="navigation">
+            <a href="../ask/index.html"  title="start askin">Ask a question</a>
+            <a href="../index.html"  title="go to home page">Home page</a>
+        </nav>
+    </header>
+    <aside>
+        <nav>
+            <div class="namelist">List of acronyms :</div>
+            <div class="list">
+                <pre class="pre">
+HPC:High Performance Computing
+MPI:Message Passing Interface
+API:Application Program Interfaces
+RDMS:Relational Database Management System
+SQL:Structured Query Language
+SAN:Storage Area Network
+HDFS:Hadoop Distributed File System
+POSIX:Portable Operating System Interface
+NFS:Network File System
+MPP:Massively parallel processing
+RAID:Redundant Array of Independent Disks
+CLI:Command Line Interface
+JVM:Java Virtual Machine
+YARN:Yet Another Resource Negotiator
+LRU:Least Recently Used
+UDF:User-defined Functions
+UDA:User-defined Aggregate
+UDTF:User-defined Table Function
+PDSH:Parallel Distributed Shell
+QJM:Quorum Journal Manager
+RDD:Resilient Distributed Data-set
+ML:Machine Learning
+LRU:Least Recently Used
+DAG:Directed Acyclic Graph
+                </pre>
+    
+            </div>
+            <div class="home">
+                <a href="../index.html"  title="go to Home page">Home page</a>
+            </div>
+            <hr>
+            <div class="chapters">
+                <a href="../chapter two/index.html"  title="go to chapter two">Chapter two</a>
+                <a href="../chapter three/index.html"  title="go to chapter three">Chapter three</a>
+                <a href="../chapter four/index.html"   title="go to chapter four">Chapter four</a>
+                <a href="../chapter five/index.html"   title="go to chapter five">Chapter five</a>
+                <a href="../chapter six/index.html"   title="go to chapter six">Chapter six</a>
+            </div>
+        </nav>
+    </aside>
+    <main>
+        <h1>Hadoop working platform
+            Hadoop framework 
+            </h1>
+            <div class="first">
+                <span>Introduction : </span>
+            
+                Apache Hadoop is an open source tool of ASF –Apache Software Foundation and it’s one of the most popular Big Data management techniques, Where it stores and processes different data what enables the Data-Driven Companies to extract the full value of all their data, And it is a software environment for writing and executing distributed applications that process large amounts of data, Nowadays Hadoop is an important part of the processing infrastructure in many internet companies like LinkedIn .
+                Hadoop provides a powerful acara to run tasks in parallel on multiple nodes connected across a local network.
+                The basic Hadoop programming language is Java, but this doesn’t mean that you can write the code just in Java but it is possible to program in C, C++, Perl, Python and Ruby extra… , But Java programming language would be more suitable.
+                Hadoop focuses on transferring the code to the location of the data instead of the continuous transfer of data, meaning that the calculations are made on the data on the same device and because data transmission take longer than performing calculations on the data , 
+                <h2>Among Hadoop advantages we can mention the following elements :</h2>
+                <h4>1.	Size:  </h4>Hadoop runs of a large clusters of computing devices and computing services.
+                <h4>2.	Strength:  </h4>Hadoop assumes in its design the presence of frequent defects in the performance of the devices and sets appropriate scenarios to deal with such disturbances.
+                <h4>3.	Scalability:  </h4>Hadoop is linearly scalable to support handling of increasingly large data by adding more nodes to the cluster.
+                <h4>4.	Simplicity:  </h4>Hadoop allows the users to write their own parallel programs easily and efficiently.  
+            
+            </div>
+            
+            <hr>
+            <div class="first">
+                <span>Apache Hadoop Components :</span>
+            
+                <h2>Hadoop consists of four main parts :</h2>
+                <h4>*	Map-Reduce : </h4>A programming module that provides support for parallel processing, location aware scheduling, fault tolerance and scalability.
+                <h4>*	YARN (Hadoop 2.x) : </h4>A resource manager who schedules tasks and reserves resources within the cluster.
+                <h4>*	HDFS (Hadoop Distributed File Systems) : </h4>Hadoop distributed file system that stores files and links their blocks logically.
+                <h4>*	Hadoop Common : </h4>Java libraries which needed to run other Hadoop modules.
+            
+            </div>
+            <div class="img">
+                Both HDFS (Storage) and Map-Reduce (processing) considers as the two basic components of the Apache Hadoop and the most important aspect of Hadoop is that both of HDFS and Map-Reduce are designed with each other and both of them are jointly published so that there is a single block, and thus provide the ability to transfer the account to the data and not the other way around. Therefore, the storage system is not actually separate from the processing system .
+                <img src="images/one.png" alt="">
+            </div>
+            <hr>
+            <div class="first">
+                <span>HDFS (Hadoop Distributed File System) :</span>
+            
+                HDFS is a Java-based file system that provides a scalable and reliable data store designed to cover large clusters and provide high-speed access to the data, It is a storage system for the Hadoop cluster, the file system divides it into parts and distributes these parts to the different servers participating in the cluster, Each server stores a small portion of the total data set and each piece of data will be copied to more than one server, and since this file system stores aggregate data in small pieces on a set of servers the analysis tasks distribute a branch to all the servers that contain part of the aggregate data .
+                Each server evaluates the value of the part of the data stored in it synchronously with the rest of the shared servers with the aggregate data, and it presents the result to be aggregated until we get a comprehensive answer to the question which wanted to be asked on the total data set , Map-Reduce take care of distributing the work and recollecting the result, HDFS is highly fail-tolerant and is designed to be deployed on low cost devices, HDFS creates multiple replicas of each data block and distributes them to computers across the cluster to enable fast and reliable access.
+            </div>
+            <div class="first">
+                <h2>Advantages of Hadoop Distributed File System :</h2>
+                <h4>>	Very Large Files : </h4>Hadoop handles files hundreds of megabytes, gigabytes, or terabytes in size. There are Hadoop clusters in operation today that store petabytes of data.
+                <h4>>	Streaming Data Access : </h4>HDFS is based around the idea that the most efficient data processing pattern is write once, and read multiple times. A data set is usually created or copied from the source, and then many analyzes are performed on that data set over time.
+                <h4>>	Commodity Hardware : </h4>Hadoop does not require expensive and highly reliable hardware. They are designed to run on clusters of commodity devices (typically available hardware that can be obtained from multiple vendors) that have a high chance of node failure across the cluster, at least for large clusters, HDFS is designed to continue operating without noticeable user interruption in the face of such failure.
+                <h4>>	Low-latency Data Access : </h4>Applications that require a short time to access data, in the tens of milliseconds, will not work well with HDFS, HDFS is optimized for high throughput data delivery, and this may be at the cost of delays.
+                <h4>>	Multiple Writers & Arbitrary File Modifications : </h4>The file can be written and modified in HDFS by a single client at a certain moment in time i.e. there is no support for multiple writers and simultaneous modification to the file through a lease between the client and the master node and writing is always done at the end of the file as Hadoop does not support modifications with offsets of different places in the file.
+                <div class="img">
+                    <h4>>  Blocks :</h4>When any file is written in HDFS, it is broken into small pieces of data known as blocks, HDFS has a default block size of 128MB which can be increased according to the requirements, These blocks are stored in the cluster in a way that is distributed over the different nodes, and this provides a Map-Reduce mechanism to process The data is parallel in the cluster .
+                    <img src="images/two.png" alt="">
+                </div>
+                <h4>>	Account Transfer is Cheaper Than Data Transfer : </h4>The account requested by the application is more effective if it is performed close to the data it is working on. This is especially true when the size of the data set is large. This reduces network congestion and increases the overall throughput of the system.
+                <h4>>	Fault Tolerant : </h4>Since HDFS uses a lot of hardware, it can continue to work even if some of them fail .
+            </div>
+            <div class="first">
+                <h2>The Components of the Hadoop Distributed File System :</h2>
+                <div class="img">
+                    The HDFS system contains two types of nodes that operate in the master-worker mode, where the HDFS cluster is composed
+                    One NameNode (the master node) and a number of DataNodes (data nodes).
+                    <img src="images/three.png" alt="">
+                </div>
+                The master node manages the namespace and persistently stores the file system tree and metadata of all files and folders on its local disk as two files: FsImage and EditLog, EditLog constantly logs every change to file system metadata and stores the entire namespace including linking blocks to files and file system properties in a file called FsImage.
+                The master node also has knowledge of the data nodes on which all blocks of a given file are located and regulates clients' access to the files .
+                Data nodes are considered as operating nodes in the file system, where they store and retrieve blocks when requested (by clients or the master node) the data node also creates a block, deletes it, and copies it to other data nodes based on instructions from the master node and the application can specify the number of file replicas to be maintained by HDFS The number of copies of a file is called the replication factor this information is stored by the master node, and the data node also sends reports to the master node periodically containing lists of the blocks it stores.
+
+            </div>
+            <div class="first">
+                <h2>Block Caching :</h2>
+                Normally the DataNode reads blocks from disk, but for frequently accessed files the blocks can be explicitly stored in the data node cache (outside the heap by default).
+                <h2>SafeMode :</h2>
+                On startup, the master node enters a special state called safe mode. No data block copying occurs when the master node is in safe mode. The master node receives Heartbeat and Blockreport messages from the data nodes, The block report message contains the list of data blocks hosted by the data nodes, Each block has a specified minimum number of copies, when the minimum copy number condition for blocks is reached + 30 additional seconds the master node exits from the safe mode, then selects the list of data blocks that are still less than the specified number of replicas and copies them to other data nodes.
+                <h2>MetaData :</h2>
+                HDFS uses a registry called the EditLog to constantly log every change that occurs to the file system metadata, for example creating a new file in HDFS makes the master node insert a record in the EditLog that indicates that, and changing the copy factor causes a new record to be inserted into the EditLog. 
+                The entire namespace including file associations and file system properties is stored in a file called FsImage, EditLog and FsImage store files in the master node's local file system, and when it starts it loads the namespace from the last FsImage saved in its memory, applies and merges EditLog on FsImage to give a new namespace, then enter Safe Mode.
+            </div>
+            <hr>
+           <div class="first">
+            <span>Comparison Between YARN1 & MapReduce :</span>
+            <div class="img">
+                The distributed implementation of MapReduce in the original version of Hadoop (version 1 and earlier) is sometimes referred to as "MapReduce 1" to distinguish it from MapReduce 2 which is the representation that uses YARN in Hadoop 2 and later, There are two types of agents in MapReduce 1 which are the JobTracker which controls the task execution process and one or more TaskTrackers, The work tracker coordinates all the tasks that are running on the system by scheduling the tasks to run on the task trackers, TaskTrackers perform tasks and send progress reports to the work tracker, which keeps a record of the overall progress of each work, If a task fails, the work tracker can reschedule the tasks on another task tracker. In MapReduce 1 Work Tracker takes care of scheduling tasks (assigning tasks to task trackers) and monitoring task progress (tracking tasks, restarting failed or slow tasks). By contrast, at YARN these responsibilities are handled by separate entities: : Resource Manager and Application Manager (one for each MapReduce work) The work tracker is also responsible for storing the history of completed works, although it is possible to run a work history server as a separate entity to lighten the load on the work tracker. In YARN there is a server called Timeline Server that stores the application history.
+                <img src="images/four.png" alt="">
+            </div>
+            <h2>YARN is designed to solve many of the limitations in MapReduce1 and the benefits of using YARN include :</h2>
+            <h4>1.	Scalability : </h4>YARN can run on clusters larger than MapReduce1, MapReduce1 hits scalability bottlenecks at 4,000 nodes and 40,000 tasks stemming from the fact that the work tracker has to manage both tasks and works. YARN overcomes these limitations by virtue of its partition design for resource manager and application manager, it is designed to reach 10,000 nodes and 100,000 missions. In contrast to the work tracker, each version of the Work MapReduce application has its own dedicated application manager that runs for the duration of the application.
+            <h4>2.	Availability : </h4>High Availability (HA) is usually achieved by copying or duplicating the requested state to another proxy to take over the work required to provide the service if the first proxy fails. However, the rapid change in the work tracker memory state (each important state is updated every few seconds) makes it very difficult to achieve availability in the work tracker, With the division of job responsibilities between the resource manager and the application manager in YARN, the service became more accessible by following the principle of divide and conquer which meaning that the issue of availability became related to the availability of the resource manager and the availability of the application manager . 
+            <h4>3.	Utilization : </h4>In MapReduce1 each task tracker is set up with a fixed allocation of fixed-size "slots", which is divided into slots for corresponding tasks and slots for reduction tasks at initialization time. A corresponding slot can only be used to run a corresponding task, and the reduction slots can only be used for a reduction task. In YARN the node manager manages a set of resources, rather than a fixed number of slots. MapReduce running on YARN will not reach the state in which it must wait for the task to wait because only corresponding slots are available in the cluster as in MapReduce1 if the resources needed to run the task are available, Furthermore, the resources in YARN are fine grained so the application can make a request with what it needs, rather than having an indivisible slot, which may be too large (which wastes resources) or too small (which may causes a failure) for the specified task.
+            <h4>4.	Multitenancy : </h4>In some ways, the biggest benefit of YARN is that it opens up Hadoop to other types of distributed applications outside of MapRadius, as MapRadius is just one of YARN's many applications, it is also possible for users to run different versions of MapReduce on the same YARN cluster, making the MapReduce upgrade process more manageable.
+            <h4>5.  Hadoop MapReduce : </h4>MapReduce works by breaking the processing into two stages: the corresponding stage and the reduction stage. Each stage has key-value pairs as input and output, the types of which can be selected by the programmer, the programmer also defines two functions, the corresponding function represented by the Mapper class and then the abstract function map() is declared in it and the reduction function represented by the class Reducer Then the reduce() function is declared in addition to the last row responsible for doing the MapReduce work of By declaring the main() function inside it .
+           </div>
+           <hr>
+           <div class="first">
+            <span>Data Flow :</span>
+           </div>
+           <div class="img">
+            Hadoop manages work by dividing it into tasks. There are two types of tasks, corresponding tasks and shorthand tasks. Tasks are scheduled using YARN and run on nodes in the cluster. If a task fails, it will be automatically rescheduled to run on a different node. Hadoop splits MapReduce work income into fixed-size chunks called input splits, Hadoop creates one corresponding task for each input split, which runs the user-defined corresponding function for each record.
+            Hadoop makes every effort to run the corresponding job on the node where the HDFS input data resides because it does not use a valuable bandwidth, this is called data locality optimization. Another corresponding, so the task scheduler will look for an empty corresponding slot on a node in the same rack and sometimes even this is not possible so an off-rack node is used outside the rack which will move data between the racks the three possibilities are shown in the following figure:
+            <img src="images/five.png" alt="">
+        </div>
+        <div class="img">
+            Shorthand jobs do not have data locality the input to a single shorthand job is usually the output of all corresponding jobs. In the current example we have a single reduction job that is fed by all the corresponding jobs, so the sorted corresponding output must be moved across the network to the node where the reduction job is running on, where the results are combined and then passed to the user-defined reduction function The output of reduction is usually stored in HDFS for reliability where for each block of reduction function output its first replica is stored on the local node, with other replicas stored on outside nodes (off-rack nodes) for increased reliability, so writing the output of the reduction function consumes network bandwidth, but only as much as writing a new block on a normal HDFS pipeline.  
+            <img src="images/six.png" alt="">
+        </div>
+        <div class="img">
+            When there are multiple reductants, The corresponding tasks divide their outputs, each creating one section for each reduction task. There can be many keys (and their associated values) in each partition, but the records of any key reside within a single partition the partition can be controlled by the user-defined partition function but usually the default splitter works.
+            The following figure shows the data flow in the case of multiple reduction tasks. This graph shows why the data flow between corresponding and reduction tasks is called shuffle, as each reduction task is fed by several corresponding tasks.
+            <img src="images/seven.png" alt="">
+        </div>
+        <hr>
+        <div class="first">
+            <span>Combiner Functions :</span>
+            Many MapReduce jobs are limited by the bandwidth available on the cluster, so in order to reduce the data transferred between the corresponding and reduction tasks, Hadoop allows the user to define an aggregation method to run on the outputs of the corresponding task, and the aggregation function's output constitutes the reduction function's input.
+        </div>
+        <div class="first">
+            <h2>How MapReduce Work in Hadoop :</h2>
+            <h4>1-	The customer operates the MapReduce work through the following steps : </h4>
+            <p>
+                	The client asks the resource manager for a new application ID.
+                	The directory in which the output will be saved is checked. For example, if it already exists, the job will not be sent and an error will appear in the program.
+                	Work income is broken down into parts.
+                	The resources needed to run the work as the work's JAR file, the setup file, and the input file portions are then copied to the Distributed File System (HDFS) in a directory named after the work identifier is specified.
+                	Work is called.
+
+            </p>
+            <h4>2-	The YARN resource manager performs the process of allocating computing resources on the cluster :</h4>
+            <p>
+                	When the application is called it hands the request to the YARN scheduler who allocates a container to work and then the resource manager launches the application manager to run under the node manager.
+                	The application manager is a Java application that initializes the work and creates a set of objects that track the progress of the work. The application manager receives reports on the progress and completion of tasks, then retrieves the work income parts from the distributed file system and creates a corresponding task for each part. The number of reduction tasks is specified by the property mapreduce.job.reduces.
+                	The application manager decides how to run the tasks that make up the work. If the work is small in size, it may choose to run it in the same JVM. This happens when the application manager sees that the overhead of allocating tasks and running them in new containers outweighs the benefits of running them in parallel  compared to running them serially on a single node. 
+
+            </p>
+            <h4>3-	The MapReduce Application Manager coordinates the running of tasks where the application manager and MapReduce tasks run in containers that are scheduled by the resource manager and managed by node managers :</h4>
+            <p>
+                	When a business needs additional resources, the application manager requests new containers from the resource manager for corresponding and reduction  
+                	tasks.
+                	Corresponding assignment requests are made first and have a higher priority than those of the reduction assignments because all the corresponding assignments must be completed before the reduction phase begins.
+
+            </p>
+            <h4>4-	Executing the task :</h4>
+            <p>
+                	Once container resources on a particular node are assigned to a task by the resource manager scheduler. The application manager starts the container by calling the node manager. The task is performed by a Java application whose main class is YarnChild and then corresponding or reduction tasks are run (step 11).
+                	YarnChild runs in a custom JVM so that a bug in the user-defined corresponding and reduction methods does not affect the node manager by causing it to crash or hang for example.
+                	Each job can perform setup and commit actions that run in the same JVM for file-based jobs, the commit action moves the job's output from its temporary location to its final location. The commit protocol ensures that when speculative execution is enabled, only one output is committed of the duplicate tasks and others are aborted.
+
+            </p>
+        </div>
+        <h4>5-	Job Completion :</h4>
+            <div class="img">
+                	When the application manager receives a notification that the last work task is finished, it changes the status of the task to 'Successful', a message is printed telling the user that the work has completed successfully, and the work stats and counters are printed.
+                	Finally the application manager and job containers upon completion of the work clean up their working state (so that the staged output is deleted), the commitJob() function is called and the job information is archived through the job history server for users to access later.
+                 <img src="images/eoght.png" alt="">
+            </div>
+            <hr>
+            <div class="fin">
+                <a href="../index.html" title="go to home"> Back</a>
+                <h1>Thanks for reading</h1>
+                <a href="../chapter two/index.html" title="go to next">Next</a>
+            </div>
+            
+
+
+
+
+    </main>
+</body>
+</html>
